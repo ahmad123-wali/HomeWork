@@ -1,0 +1,32 @@
+package javaapplication43;
+
+import java.util.Scanner;
+
+public class JavaApplication43 {
+
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.println("please enter a phoneNumber  ");
+        String number = input.nextLine();
+        if (number.length() != 10) {
+            System.out.println("This number is false");
+
+        }
+        if (number.length() == 10) {
+            System.out.println("This number is true");
+
+            if (number.startsWith("078") || number.startsWith("073")) {
+                System.out.println("This is an Etisalat number");
+            } else if (number.startsWith("079")||number.startsWith("072")) {
+                System.out.println(" This is a Roshan number");
+            } else if (number.startsWith("070") || number.startsWith("071")) {
+                System.out.println("This is an AWCC number");
+            } else if (number.startsWith("076")|| number.startsWith("077")) {
+                System.out.println("This is a MTN number");
+            }
+            
+
+        }
+
+    }
+}
